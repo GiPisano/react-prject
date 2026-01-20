@@ -1,5 +1,7 @@
 import profileImg from '../assets/Laura_Smith.png'
-import About from './About'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Info() {
   return (
@@ -12,8 +14,8 @@ export default function Info() {
           <p className="web-site">laurasmith.website</p>
 
           <div className="social-buttons">
-            <button className="btn email">Email</button>
-            <button className="btn linkedin">LinkedIn</button>
+            <button className="btn email"><FontAwesomeIcon icon={faEnvelope} /> Email</button>
+            <button className="btn linkedin"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</button>
           </div>
         </div>
       
